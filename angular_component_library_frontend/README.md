@@ -12,6 +12,26 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
+## Storybook (Component Explorer)
+
+Storybook is configured with the "Ocean Professional" theme.
+
+Scripts:
+```bash
+npm run storybook       # starts at http://localhost:6006
+npm run build-storybook # builds static site to storybook-static/
+```
+
+Theme colors:
+- primary: #2563EB
+- secondary: #F59E0B
+- error: #EF4444
+- background: #f9fafb
+- surface: #ffffff
+- text: #111827
+
+An example story is provided for `AppComponent` at `src/app/app.component.stories.ts`. Replace or extend with your actual library components.
+
 ## Code scaffolding
 
 Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
