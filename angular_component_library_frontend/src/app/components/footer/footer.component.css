@@ -1,0 +1,25 @@
+@import url('/app/shared/ocean-theme.css');
+
+.footer { color: #fff; padding: 48px 24px; }
+.footer__inner {
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 1.2fr .8fr 1fr; gap: 24px;
+}
+.footer__about { margin-top: 12px; color: rgba(255,255,255,.9); font-size: 18px; line-height: 1.4; max-width: 590px; }
+.footer__title { font-size: 28px; font-weight: 600; margin-bottom: 12px; }
+.footer__link { display:block; color:#fff; opacity:.95; text-decoration:none; padding:6px 0; font-size: 24px; }
+.footer__link:hover { opacity: 1; }
+.footer__sub-row { display:flex; gap:12px; align-items:center; }
+.footer__input {
+  height: 48px; flex:1; border-radius: 10px; border:2px solid #fff; padding: 0 12px; background: transparent; color:#fff;
+}
+.footer__sub-btn {
+  position: relative; height: 48px; border: none; background: transparent; color: #000; font-weight: 600; cursor: pointer;
+}
+.footer__sub-btn img { height: 48px; }
+.footer__sub-btn span { position: absolute; left: 20px; top: 12px; font-size: 16px; }
+.footer__social { display: flex; gap: 28px; margin-top: 14px; font-size: 28px; font-weight: 600; }
+.footer__copy { margin-top: 10px; color: rgba(255,255,255,.9); font-size: 23px; }
+@media (max-width: 900px) {
+  .footer__inner { grid-template-columns: 1fr; }
+}

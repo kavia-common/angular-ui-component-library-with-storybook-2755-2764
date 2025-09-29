@@ -1,0 +1,47 @@
+@import url('/app/shared/ocean-theme.css');
+
+.hero-card {
+  width: min(512px, 100%);
+  border-radius: 84px;
+  padding-bottom: 24px;
+  overflow: hidden;
+  position: relative;
+}
+.hero-card__image {
+  display: block;
+  width: calc(100% - 52px);
+  max-width: 459px;
+  height: auto;
+  margin: 26px auto 0;
+  border-radius: 24px;
+  box-shadow: var(--ocn-shadow-lg);
+}
+.hero-card__body {
+  padding: 24px 32px 16px;
+  text-align: left;
+}
+.hero-card__eyebrow {
+  font-size: 23px;
+  font-weight: 400;
+  color: var(--ocn-muted);
+  margin-top: 16px;
+}
+.hero-card__title {
+  font-size: 38px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+.hero-card__cta {
+  margin-top: 20px;
+}
+.hero-card__dots {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.dot {
+  width: 6px; height: 6px; background: #ddd; border-radius: 999px;
+}
+.dot--lg { width: 22px; height: 6px; background: #111; }

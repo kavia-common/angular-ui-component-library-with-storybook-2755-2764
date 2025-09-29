@@ -1,0 +1,27 @@
+@import url('/app/shared/ocean-theme.css');
+
+.tcard {
+  border-radius: 84px;
+  padding: 32px;
+  width: min(512px, 100%);
+  box-shadow: var(--ocn-shadow-lg);
+}
+.tcard__header {
+  display: flex; gap: 16px; align-items: center;
+}
+.tcard__avatar {
+  width: 71px; height: 71px; border-radius: 50%; object-fit: cover; box-shadow: var(--ocn-shadow-md);
+}
+.tcard__name {
+  font-size: 24px; font-weight: 600;
+}
+.tcard__stars {
+  display: flex; gap: 8px; margin-top: 6px;
+}
+.star, .star::after {
+  width: 15px; height: 15px; display: inline-block; background: #d1d5db; clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  content: "";
+}
+.star--filled { background: #F59E0B; }
+.star--half { background: linear-gradient(90deg, #F59E0B 0 50%, #d1d5db 50% 100%); }
+.tcard__message { margin-top: 18px; color: var(--ocn-muted); font-size: 21px; line-height: 1.25; }

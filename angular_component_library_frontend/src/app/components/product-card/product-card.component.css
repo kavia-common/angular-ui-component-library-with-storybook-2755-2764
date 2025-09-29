@@ -1,0 +1,24 @@
+@import url('/app/shared/ocean-theme.css');
+
+.pcard {
+  width: min(512px, 100%);
+  border-radius: 84px;
+  background: var(--ocn-surface);
+  box-shadow: var(--ocn-shadow-lg);
+  overflow: hidden;
+  padding-bottom: 16px;
+}
+.pcard__media {
+  display: flex; justify-content: center; padding-top: 20px;
+}
+.pcard__media img {
+  width: min(377px, 85%); height: auto; border-radius: 24px; box-shadow: var(--ocn-shadow-md);
+}
+.pcard__body { padding: 10px 28px 0; }
+.pcard__title { font-size: 38px; font-weight: 600; margin-top: 6px; }
+.pcard__desc { font-size: 24px; margin-top: 4px; color: var(--ocn-muted); }
+.pcard__footer { margin-top: 12px; display: flex; justify-content: space-between; align-items: center; }
+.pcard__price { font-size: 38px; font-weight: 600; }
+.pcard__add { position: relative; width: 57px; height: 57px; display: inline-block; }
+.pcard__add-bg { position: absolute; inset: 0; width: 57px; height: 57px; }
+.pcard__add-symbol { position: absolute; width: 30px; height: 30px; left: 13.5px; top: 13.5px; }

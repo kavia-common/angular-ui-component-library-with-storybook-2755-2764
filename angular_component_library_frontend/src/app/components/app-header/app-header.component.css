@@ -1,0 +1,24 @@
+@import url('../../shared/ocean-theme.css');
+
+.header {
+  position: relative;
+  width: 100%;
+  padding: 16px 24px;
+  z-index: 10;
+}
+.header--glass {
+  background: linear-gradient(180deg, rgba(17,24,39,0.55), rgba(17,24,39,0.15));
+  backdrop-filter: blur(6px);
+}
+.header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 24px;
+}
+.hide-mobile { display: none; }
+@media (min-width: 900px) {
+  .hide-mobile { display: block; }
+}

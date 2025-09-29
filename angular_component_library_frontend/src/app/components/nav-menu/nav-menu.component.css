@@ -1,0 +1,23 @@
+@import url('/app/shared/ocean-theme.css');
+
+.nav {
+  display: inline-flex;
+  gap: 28px;
+  align-items: center;
+}
+.nav__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  opacity: .95;
+}
+.nav__item:hover { opacity: 1; }
+.nav__caret {
+  width: 15px;
+  height: 9px;
+  opacity: .9;
+}

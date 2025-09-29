@@ -1,0 +1,12 @@
+<article class="tcard ocn-card">
+  <div class="tcard__header">
+    <img class="tcard__avatar" [src]="avatar" alt="{{name}}" />
+    <div class="tcard__meta">
+      <div class="tcard__name">{{ name }}</div>
+      <div class="tcard__stars" [attr.aria-label]="'Rating ' + rating + ' out of 5'">
+        <span *ngFor="let s of [1,2,3,4,5]; let i = index" class="star" [class.star--filled]="i+1 <= Math.floor(rating)" [class.star--half]="i+1 > Math.floor(rating) && i < rating"></span>
+      </div>
+    </div>
+  </div>
+  <p class="tcard__message">{{ message }}</p>
+</article>

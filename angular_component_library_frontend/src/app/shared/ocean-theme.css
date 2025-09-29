@@ -1,0 +1,65 @@
+:root {
+  --ocn-primary: #2563EB;
+  --ocn-secondary: #F59E0B;
+  --ocn-success: #F59E0B;
+  --ocn-error: #EF4444;
+  --ocn-bg: #f9fafb;
+  --ocn-surface: #ffffff;
+  --ocn-text: #111827;
+  --ocn-muted: #6b7280;
+  --ocn-radius-xl: 32px;
+  --ocn-radius-lg: 20px;
+  --ocn-radius-md: 12px;
+  --ocn-radius-sm: 8px;
+  --ocn-shadow-sm: 0 1px 2px rgba(0,0,0,.06);
+  --ocn-shadow-md: 0 6px 16px rgba(0,0,0,.08);
+  --ocn-shadow-lg: 0 16px 40px rgba(0,0,0,.12);
+}
+.ocn-card {
+  background: var(--ocn-surface);
+  color: var(--ocn-text);
+  border-radius: var(--ocn-radius-lg);
+  box-shadow: var(--ocn-shadow-md);
+}
+.ocn-pill {
+  border-radius: 9999px;
+  border: 2px solid rgba(255,255,255,.9);
+}
+.ocn-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .75rem 1.25rem;
+  border-radius: var(--ocn-radius-md);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background: transparent;
+  transition: all .2s ease;
+}
+.ocn-cta:hover {
+  background: rgba(255,255,255,.08);
+}
+.ocn-title-xl {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.ocn-title-lg {
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  font-weight: 600;
+}
+.ocn-title-md {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.ocn-body {
+  font-size: 1rem;
+  color: var(--ocn-muted);
+}
+.ocn-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.ocn-gap-lg { gap: 1.25rem; }
+.ocn-gap-xl { gap: 2rem; }

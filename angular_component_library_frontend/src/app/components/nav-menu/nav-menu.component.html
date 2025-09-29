@@ -1,0 +1,6 @@
+<nav class="nav">
+  <a *ngFor="let item of items" class="nav__item" href="#">
+    <span>{{ item.label }}</span>
+    <img *ngIf="item.hasDropdown" [src]="dropdownIcon" alt="" class="nav__caret" />
+  </a>
+</nav>

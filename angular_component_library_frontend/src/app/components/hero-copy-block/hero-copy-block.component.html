@@ -1,0 +1,14 @@
+<div class="copy">
+  <h1 class="ocn-title-xl copy__headline">{{ headline }}</h1>
+  <p class="ocn-body copy__desc">{{ description }}</p>
+  <div class="ocn-row ocn-gap-lg copy__actions">
+    <button class="ocn-cta">{{ primaryCta }}</button>
+    <div *ngIf="showDemo" class="copy__demo">
+      <span class="copy__demo-ring">
+        <img [src]="playRing" alt="" />
+        <img class="copy__demo-icon" [src]="playTriangle" alt="" />
+      </span>
+      <span class="copy__demo-text">Live Demo...</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<article class="pcard">
+  <div class="pcard__media">
+    <img [src]="image" alt="" />
+  </div>
+  <div class="pcard__body">
+    <div class="pcard__title">{{ title }}</div>
+    <div class="pcard__desc">{{ description }}</div>
+    <div class="pcard__footer">
+      <div class="pcard__price">{{ price }}</div>
+      <span class="pcard__add">
+        <img class="pcard__add-bg" [src]="addIcon" alt="" />
+        <img class="pcard__add-symbol" [src]="addSymbol" alt="" />
+      </span>
+    </div>
+  </div>
+</article>

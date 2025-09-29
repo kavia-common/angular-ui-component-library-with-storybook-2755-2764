@@ -1,4 +1,5 @@
 /* Global styles for minimalistic design */
+@import url('./app/shared/ocean-theme.css');
 * {
   margin: 0;
   padding: 0;

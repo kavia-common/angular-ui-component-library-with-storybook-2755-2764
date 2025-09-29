@@ -1,0 +1,30 @@
+<footer class="footer" [style.background]="background">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <lib-brand-logo></lib-brand-logo>
+      <p class="footer__about">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+
+    <div class="footer__links">
+      <div class="footer__title">Quick Link’s</div>
+      <a class="footer__link" href="#" *ngFor="let l of links">{{ l }}</a>
+    </div>
+
+    <div class="footer__sub">
+      <div class="footer__title">For Every Update’s</div>
+      <div class="footer__sub-row">
+        <input class="footer__input" placeholder="Enter Email..." />
+        <button class="footer__sub-btn">
+          <img [src]="subscribeCta" alt="subscribe">
+          <span>SUBSCRIBE</span>
+        </button>
+      </div>
+      <div class="footer__social">
+        <span>FB</span><span>TW</span><span>LI</span>
+      </div>
+      <div class="footer__copy">Planto © All right reserve</div>
+    </div>
+  </div>
+</footer>

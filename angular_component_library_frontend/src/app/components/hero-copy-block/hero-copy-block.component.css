@@ -1,0 +1,11 @@
+@import url('/app/shared/ocean-theme.css');
+
+.copy { color: #ffffff; max-width: 820px; }
+.copy__headline { margin-bottom: 12px; }
+.copy__desc { margin-bottom: 18px; color: rgba(255,255,255,.9); font-size: 23px; line-height: 1.25; }
+.copy__actions { margin-top: 8px; }
+.copy__demo { display: inline-flex; align-items: center; gap: 12px; }
+.copy__demo-ring { position: relative; display: inline-block; width: 58px; height: 58px; }
+.copy__demo-ring img { position: absolute; inset: 0; width: 58px; height: 58px; }
+.copy__demo-icon { width: 30px !important; height: 29px !important; left: 14px; top: 14px; }
+.copy__demo-text { font-weight: 600; font-size: 18px; }
